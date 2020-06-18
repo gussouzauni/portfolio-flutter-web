@@ -4,11 +4,9 @@ class CustomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(20),
       padding: EdgeInsets.all(30),
-      decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(45),
+      decoration: BoxDecoration(color: Colors.white,
+          //borderRadius: BorderRadius.circular(45),
           boxShadow: [
             BoxShadow(
               offset: Offset(0, -2),

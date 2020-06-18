@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:myportfolio/src/pages/components/customBar.dart';
+import 'package:myportfolio/src/pages/components/footer.dart';
 import 'package:myportfolio/src/pages/components/resume.dart';
 
 class HomePage extends StatefulWidget {
@@ -36,11 +37,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            Container(
-              height: 200,
-              child: Text('Footer'),
-              color: Colors.white,
-            ),
+            FooterCustom(),
           ],
         ),
       ),
