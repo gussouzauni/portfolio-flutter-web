@@ -12,20 +12,24 @@ class FooterCustom extends StatelessWidget {
     return Container(
       height: 80,
       width: MediaQuery.of(context).size.width,
-      color: Colors.white,
+      color: Color(0xff2c3e50),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             'Copyright © ',
-            style: TextStyle(fontSize: 18),
+            style: TextStyle(
+                fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
           ),
           InkWell(
             onTap: () => htmlOpenLink(),
             child: Text(
               'Gussouza',
-              style: TextStyle(fontSize: 18, color: Colors.blue),
+              style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
             ),
           ),
         ],

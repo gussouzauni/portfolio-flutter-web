@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:myportfolio/src/pages/components/customBar.dart';
 import 'package:myportfolio/src/pages/components/footer.dart';
+import 'package:myportfolio/src/pages/components/portfolio.dart';
 import 'package:myportfolio/src/pages/components/resume.dart';
 
 class HomePage extends StatefulWidget {
@@ -33,6 +34,15 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   children: [
                     Resume(),
+                    Portfolio(),
+                    Padding(
+                      padding: EdgeInsets.all(30),
+                      child: Container(
+                        color: Colors.amber,
+                        height: 200,
+                        width: MediaQuery.of(context).size.width,
+                      ),
+                    ),
                   ],
                 ),
               ),

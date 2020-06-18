@@ -5,7 +5,7 @@ class CustomBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(30),
-      decoration: BoxDecoration(color: Colors.white,
+      decoration: BoxDecoration(color: Color(0xff2c3e50),
           //borderRadius: BorderRadius.circular(45),
           boxShadow: [
             BoxShadow(
@@ -27,7 +27,10 @@ class CustomBar extends StatelessWidget {
             text: TextSpan(children: <TextSpan>[
               TextSpan(
                   text: 'Portfolio',
-                  style: TextStyle(color: Colors.black, fontSize: 20)),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold)),
             ]),
           ),
         ],
