@@ -23,4 +23,6 @@ flutter:
   uses-material-design: true
   assets:
     - lib/src/assets/images/myphoto.png
-    - lib/src/assets/images/background.jpg
+    - lib/src/assets/images/undrawOne.svg
+    - lib/src/assets/images/undrawTwo.svg
+    - lib/src/assets/images/undrawThree.svg

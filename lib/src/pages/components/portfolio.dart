@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import '';
 
 class Portfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400,
+      height: MediaQuery.of(context).size.height / 2.0,
       width: MediaQuery.of(context).size.width,
       color: Colors.blue,
       child: CustomScrollView(
@@ -15,13 +13,15 @@ class Portfolio extends StatelessWidget {
           SliverPadding(
             padding: const EdgeInsets.all(20),
             sliver: SliverGrid.count(
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 10,
+              crossAxisSpacing: 5,
+              mainAxisSpacing: 5,
               crossAxisCount: 3,
               children: <Widget>[
                 Container(
                   padding: const EdgeInsets.all(8),
-                  child: Text('Grid One....'),
+                  width: 100,
+                  height: 100,
+                  child: Image.asset('lib/src/assets/images/myphoto.png'),
                   color: Colors.purple[100],
                 ),
                 Container(
