@@ -4,9 +4,9 @@ class Portfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height / 2.0,
+      height: MediaQuery.of(context).size.height / 1.0,
       width: MediaQuery.of(context).size.width,
-      color: Colors.blue,
+      color: Color(0xff2c3e50),
       child: CustomScrollView(
         primary: false,
         slivers: <Widget>[
@@ -19,9 +19,8 @@ class Portfolio extends StatelessWidget {
               children: <Widget>[
                 Container(
                   padding: const EdgeInsets.all(8),
-                  width: 100,
-                  height: 100,
-                  child: Image.asset('lib/src/assets/images/myphoto.png'),
+                  child: Image.network(
+                      'https://gussouzauni.github.io/portfolio/img/portfolio/duoprogramador/screen_perfil.png'),
                   color: Colors.purple[100],
                 ),
                 Container(

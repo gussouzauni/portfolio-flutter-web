@@ -67,9 +67,26 @@ class Resume extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Icon(Icons.dashboard),
-                        Icon(Icons.dashboard),
-                        Icon(Icons.dashboard)
+                        Image.asset(
+                          'lib/src/assets/images/github.png',
+                          width: 60,
+                          height: 60,
+                          color: Colors.black,
+                        ),
+                        Image.asset(
+                          'lib/src/assets/images/github.png',
+                          width: 60,
+                          height: 60,
+                          color: Colors.black,
+                        ),
+                        Image.asset(
+                          'lib/src/assets/images/linkedin.png',
+                          width: 60,
+                          height: 60,
+                        ),
+                        Image.asset(
+                          'lib/src/assets/images/instagram.png',
+                        ),
                       ],
                     ),
                   ],

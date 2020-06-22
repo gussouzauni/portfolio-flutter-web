@@ -14,7 +14,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    var height = MediaQuery.of(context).size.height;
+    // var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
 
     return Scaffold(
@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
             gradient: new LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: [Color(0xff7159c1), Color(0xfffff)])),
+                colors: [Color(0xff43bd9d), Color(0xff43bd9d)])),
         child: Column(
           children: [
             CustomBar(),
@@ -36,10 +36,10 @@ class _HomePageState extends State<HomePage> {
                     Resume(),
                     Portfolio(),
                     Padding(
-                      padding: EdgeInsets.all(30),
+                      padding: EdgeInsets.all(20),
                       child: Container(
-                        color: Colors.amber,
-                        height: 200,
+                        color: Color(0xff43bd9d),
+                        height: 500,
                         width: MediaQuery.of(context).size.width,
                       ),
                     ),
