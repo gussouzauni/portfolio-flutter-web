@@ -4,34 +4,40 @@ class Portfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height / 1.0,
+      height: MediaQuery.of(context).size.height / 1.6,
       width: MediaQuery.of(context).size.width,
       color: Color(0xff2c3e50),
       child: CustomScrollView(
         primary: false,
+        scrollDirection: Axis.horizontal,
         slivers: <Widget>[
           SliverPadding(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(10.0),
             sliver: SliverGrid.count(
-              crossAxisSpacing: 5,
-              mainAxisSpacing: 5,
-              crossAxisCount: 3,
+              crossAxisSpacing: 2,
+              mainAxisSpacing: 2,
+              crossAxisCount: 1,
               children: <Widget>[
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  child: Image.network(
-                      'https://gussouzauni.github.io/portfolio/img/portfolio/duoprogramador/screen_perfil.png'),
-                  color: Colors.purple[100],
+                  child: Image.asset(
+                    'lib/src/assets/images/screenTwo.png',
+                    width: 200,
+                    height: 200,
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Grid Two...'),
-                  color: Colors.green[600],
+                  child: Image.asset(
+                    'lib/src/assets/images/screenOne.png',
+                    width: 200,
+                    height: 200,
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Grid Three...'),
-                  color: Colors.white,
+                  child: Image.asset(
+                    'lib/src/assets/images/covid.png',
+                    width: 200,
+                    height: 200,
+                  ),
                 ),
               ],
             ),

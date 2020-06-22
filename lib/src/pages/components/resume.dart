@@ -30,6 +30,8 @@ class Resume extends StatelessWidget {
               ),
               Container(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'Gustavo Souza',
@@ -54,7 +56,7 @@ class Resume extends StatelessWidget {
                       height: 50,
                     ),
                     Text(
-                      'Desenvolvedor, amante da tecnologia, me aventuro em desafios e tecnologias!',
+                      'Desenvolvedor, 21 anos',
                       style: TextStyle(
                           fontSize: 20,
                           fontFamily: 'Montserrat',
@@ -74,18 +76,14 @@ class Resume extends StatelessWidget {
                           color: Colors.black,
                         ),
                         Image.asset(
-                          'lib/src/assets/images/github.png',
-                          width: 60,
-                          height: 60,
-                          color: Colors.black,
-                        ),
-                        Image.asset(
                           'lib/src/assets/images/linkedin.png',
                           width: 60,
                           height: 60,
                         ),
                         Image.asset(
                           'lib/src/assets/images/instagram.png',
+                          width: 60,
+                          height: 60,
                         ),
                       ],
                     ),

@@ -12,18 +12,50 @@ class CustomBar extends StatelessWidget {
           color: Colors.black.withOpacity(0.16),
         ),
       ]),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Column(
         children: [
-          RichText(
-            text: TextSpan(children: <TextSpan>[
-              TextSpan(
-                  text: 'PORTFÓLIO',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold)),
-            ]),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                child: RichText(
+                  text: TextSpan(children: <TextSpan>[
+                    TextSpan(
+                        text: 'PORTFÓLIO',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold)),
+                  ]),
+                ),
+              ),
+              Container(
+                child: Row(
+                  children: [
+                    Text(
+                      'Home',
+                      style: TextStyle(
+                          fontSize: 28,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      width: 40,
+                    ),
+                    Text(
+                      'Contato',
+                      style: TextStyle(
+                          fontSize: 28,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ],
       ),

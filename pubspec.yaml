@@ -26,6 +26,9 @@ flutter:
     - lib/src/assets/images/github.png
     - lib/src/assets/images/linkedin.png
     - lib/src/assets/images/instagram.png
+    - lib/src/assets/images/screenOne.png
+    - lib/src/assets/images/screenTwo.png
+    - lib/src/assets/images/covid.png
     - lib/src/assets/svg/undrawOne.svg
     - lib/src/assets/svg/undrawTwo.svg
     - lib/src/assets/svg/undrawThree.svg
