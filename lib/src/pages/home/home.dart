@@ -3,8 +3,9 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:myportfolio/src/pages/components/customBar.dart';
 import 'package:myportfolio/src/pages/components/footer.dart';
-import 'package:myportfolio/src/pages/components/portfolio.dart';
-import 'package:myportfolio/src/pages/components/resume.dart';
+
+import 'portfolio.dart';
+import 'resume.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -35,6 +36,10 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     Resume(),
                     Portfolio(),
+                    InkWell(
+                        onTap: () =>
+                            Navigator.of(context).pushNamed('/contato'),
+                        child: Text('Página contato')),
                     Padding(
                       padding: EdgeInsets.all(20),
                       child: Container(

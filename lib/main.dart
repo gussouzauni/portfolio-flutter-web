@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:myportfolio/src/pages/home.dart';
+import 'package:myportfolio/src/pages/contact/contact.dart';
+
+import 'src/pages/home/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +18,11 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(visualDensity: VisualDensity.adaptivePlatformDensity),
-      home: HomePage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomePage(),
+        '/contato': (context) => ContactPage()
+      },
     );
   }
 }
