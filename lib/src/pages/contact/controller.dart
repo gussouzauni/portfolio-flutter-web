@@ -1,7 +1,3 @@
-import 'dart:html';
-import 'dart:math';
-
-import 'package:flutter/rendering.dart';
 import 'package:mobx/mobx.dart';
 part 'controller.g.dart';
 
