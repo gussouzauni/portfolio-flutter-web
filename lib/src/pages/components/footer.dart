@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'dart:html' as html;
+import 'package:myportfolio/src/utils/export.dart';
 
 class FooterCustom extends StatelessWidget {
-  void htmlOpenLink() {
-    String url = 'https://www.linkedin.com/in/gussouza/';
-    html.window.open(url, '_blank');
-  }
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,7 +18,8 @@ class FooterCustom extends StatelessWidget {
                 fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
           ),
           InkWell(
-            onTap: () => htmlOpenLink(),
+            onTap: () => customUtil()
+                .htmlOpenLink('https://www.linkedin.com/in/gussouza/'),
             child: Text(
               'Gussouza',
               style: TextStyle(

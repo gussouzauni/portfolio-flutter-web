@@ -18,38 +18,40 @@ class CustomBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                child: RichText(
-                  text: TextSpan(children: <TextSpan>[
-                    TextSpan(
-                        text: 'PORTFÓLIO',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold)),
-                  ]),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/');
+                  },
+                  child: RichText(
+                    text: TextSpan(children: <TextSpan>[
+                      TextSpan(
+                          text: 'PORTFÓLIO',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold)),
+                    ]),
+                  ),
                 ),
               ),
               Container(
                 child: Row(
                   children: [
-                    Text(
-                      'Home',
-                      style: TextStyle(
-                          fontSize: 28,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
-                    ),
                     SizedBox(
                       width: 40,
                     ),
                     InkWell(
                       onTap: () => Navigator.of(context).pushNamed('/contato'),
-                      child: Text(
-                        'Contato',
-                        style: TextStyle(
-                            fontSize: 28,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold),
+                      child: InkWell(
+                        onTap: () {},
+                        child: Text(
+                          'Contato',
+                          style: TextStyle(
+                              fontSize: 28,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                     SizedBox(

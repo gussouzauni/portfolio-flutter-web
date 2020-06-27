@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myportfolio/src/pages/contact/controller.dart';
 
 class FormCustom extends StatefulWidget {
   @override
@@ -6,10 +7,13 @@ class FormCustom extends StatefulWidget {
 }
 
 class _FormCustomState extends State<FormCustom> {
+  ContactStore contactStore = ContactStore();
+
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
+
     return Padding(
       padding: const EdgeInsets.only(top: 100),
       child: Container(
@@ -36,6 +40,7 @@ class _FormCustomState extends State<FormCustom> {
                 keyboardType: TextInputType.text,
                 cursorColor: Colors.white,
                 style: TextStyle(color: Colors.white),
+                onChanged: contactStore.setName,
                 decoration: InputDecoration(
                     hintText: 'Nome',
                     hintStyle: TextStyle(

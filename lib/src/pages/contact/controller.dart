@@ -6,7 +6,7 @@ class ContactStore = _ContactStoreBase with _$ContactStore;
 abstract class _ContactStoreBase with Store {
   _ContactStore() {
     autorun((_) {
-      print(email);
+      print(name);
     });
   }
 
@@ -21,6 +21,7 @@ abstract class _ContactStoreBase with Store {
 
   @action
   void setName(String value) => name = value;
+
   @computed
   bool get isEmailValid => RegExp(
           r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
