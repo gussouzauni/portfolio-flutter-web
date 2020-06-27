@@ -36,10 +36,6 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     Resume(),
                     Portfolio(),
-                    InkWell(
-                        onTap: () =>
-                            Navigator.of(context).pushNamed('/contato'),
-                        child: Text('Página contato')),
                     Padding(
                       padding: EdgeInsets.all(20),
                       child: Container(

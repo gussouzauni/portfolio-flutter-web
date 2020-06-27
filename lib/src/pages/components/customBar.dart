@@ -42,12 +42,15 @@ class CustomBar extends StatelessWidget {
                     SizedBox(
                       width: 40,
                     ),
-                    Text(
-                      'Contato',
-                      style: TextStyle(
-                          fontSize: 28,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
+                    InkWell(
+                      onTap: () => Navigator.of(context).pushNamed('/contato'),
+                      child: Text(
+                        'Contato',
+                        style: TextStyle(
+                            fontSize: 28,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
                     SizedBox(
                       width: 30,
