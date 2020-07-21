@@ -7,5 +7,5 @@
 ## Screenshots
 
 <p align="center">
-  <img width="420" height="869" src="https://github.com/gussouzauni/meuportfolio-web/blob/master/meuportfolio-web/assets/images/layout.gif">
+  <img width="'450" src="https://github.com/gussouzauni/portfolio-flutter-web/blob/master/assets/images/layout.gif">
 </p>
