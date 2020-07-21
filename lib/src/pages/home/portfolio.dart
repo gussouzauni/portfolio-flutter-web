@@ -10,6 +10,7 @@ class _PortfolioState extends State<Portfolio> {
   List<String> images = [
     'assets/images/duo-programador/duo1.png',
     'assets/images/app-covid/covid.png',
+    'assets/images/vera-chatbot/vera2.png',
     'assets/images/vera-chatbot/vera1.png',
   ];
 
@@ -21,12 +22,13 @@ class _PortfolioState extends State<Portfolio> {
       height: MediaQuery.of(context).size.height / 1.2,
       child: ListView.builder(
           physics: AlwaysScrollableScrollPhysics(),
-          padding: EdgeInsets.all(15.0),
           scrollDirection: Axis.horizontal,
+          padding: EdgeInsets.all(15),
           itemCount: images.length,
           itemBuilder: (context, index) {
             return Container(
               alignment: Alignment.topCenter,
+              margin: EdgeInsets.only(left: 10),
               child: Image.asset(
                 images[index],
                 width: 417,

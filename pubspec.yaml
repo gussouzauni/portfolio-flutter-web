@@ -38,10 +38,10 @@ flutter:
     - assets/images/duo-programador/duo2.png
     - assets/images/duo-programador/duo3.png
     - assets/images/duo-programador/duo4.png
-    - assets/images/i9xp1.png
-    - assets/images/i9xp2.png
-    - assets/images/i9xp3.png
-    - assets/images/i9xp4.png
+    - assets/images/i9xp/i9xp1.png
+    - assets/images/i9xp/i9xp2.png
+    - assets/images/i9xp/i9xp3.png
+    - assets/images/i9xp/i9xp4.png
     - assets/svg/undrawOne.svg
     - assets/svg/undrawTwo.svg
     - assets/svg/undrawThree.svg
