@@ -18,7 +18,7 @@ class FooterCustom extends StatelessWidget {
                 fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
           ),
           InkWell(
-            onTap: () => customUtil()
+            onTap: () => CustomUtil()
                 .htmlOpenLink('https://www.linkedin.com/in/gussouza/'),
             child: Text(
               'Gussouza',

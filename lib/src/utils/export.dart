@@ -1,6 +1,6 @@
 import 'dart:html' as html;
 
-class customUtil {
+class CustomUtil {
   String htmlOpenLink(String url) {
     html.window.open(url, '_blank');
   }

@@ -20,28 +20,21 @@ class Portfolio extends StatelessWidget {
               children: <Widget>[
                 Container(
                   child: Image.asset(
-                    'lib/src/assets/images/screenTwo.png',
+                    'assets/images/vera-chatbot/vera1.png',
                     width: 200,
                     height: 200,
                   ),
                 ),
                 Container(
                   child: Image.asset(
-                    'lib/src/assets/images/screenOne.png',
+                    'assets/images/app-covid/covid.png',
                     width: 200,
                     height: 200,
                   ),
                 ),
                 Container(
                   child: Image.asset(
-                    'lib/src/assets/images/covid.png',
-                    width: 200,
-                    height: 200,
-                  ),
-                ),
-                Container(
-                  child: Image.asset(
-                    'lib/src/assets/images/covid.png',
+                    'assets/images/duo-programador/duo1.png',
                     width: 200,
                     height: 200,
                   ),

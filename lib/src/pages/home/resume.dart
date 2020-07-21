@@ -71,29 +71,38 @@ class Resume extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         InkWell(
-                          onTap: () => customUtil()
+                          onTap: () => CustomUtil()
                               .htmlOpenLink('https://github.com/gussouzauni'),
                           child: Image.asset(
-                            'lib/src/assets/images/github.png',
+                            'assets/icons/github.png',
                             width: 60,
                             height: 60,
                             color: Colors.black,
                           ),
                         ),
                         InkWell(
-                          onTap: () => customUtil().htmlOpenLink(
+                          onTap: () => CustomUtil().htmlOpenLink(
                               'https://www.linkedin.com/in/gussouza/'),
                           child: Image.asset(
-                            'lib/src/assets/images/linkedin.png',
+                            'assets/icons/linkedin.png',
                             width: 60,
                             height: 60,
                           ),
                         ),
                         InkWell(
-                          onTap: () => customUtil().htmlOpenLink(
+                          onTap: () => CustomUtil().htmlOpenLink(
                               'https://instagram.com/gussouzauni'),
                           child: Image.asset(
-                            'lib/src/assets/images/instagram.png',
+                            'assets/icons/instagram.png',
+                            width: 60,
+                            height: 60,
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () => CustomUtil().htmlOpenLink(
+                              'https://instagram.com/gussouzauni'),
+                          child: Image.asset(
+                            'assets/icons/whatsapp.png',
                             width: 60,
                             height: 60,
                           ),

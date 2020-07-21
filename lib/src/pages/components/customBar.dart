@@ -42,7 +42,7 @@ class CustomBar extends StatelessWidget {
                       width: 40,
                     ),
                     InkWell(
-                      onTap: () => Navigator.of(context).pushNamed('/contato'),
+                      onTap: () => {},
                       child: InkWell(
                         onTap: () {},
                         child: Text(
