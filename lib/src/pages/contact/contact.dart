@@ -19,19 +19,34 @@ class _ContactPageState extends State<ContactPage> {
     return Scaffold(
       body: LayoutBuilder(
         builder: (context, constraints) {
-          if (constraints.maxWidth > 600) {}
           if (constraints.maxWidth < 800) {
             return Container(
-              color: Colors.amber,
-              width: 100,
-              height: 100,
+              width: width,
+              height: height,
+              child: Column(
+                children: [
+                  CustomBar(),
+                  FormCustom(
+                    valueWidth: 1.1,
+                    valueHeight: 1.8,
+                    fontSizeField: 14,
+                  )
+                ],
+              ),
             );
           } else {
             return Container(
               width: width,
               height: height,
               child: Column(
-                children: [CustomBar(), FormCustom()],
+                children: [
+                  CustomBar(),
+                  FormCustom(
+                    valueHeight: 2,
+                    valueWidth: 1.5,
+                    fontSizeField: 28,
+                  )
+                ],
               ),
             );
           }

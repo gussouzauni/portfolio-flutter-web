@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myportfolio/src/utils/export.dart';
+import 'package:myportfolio/src/utils/utils.dart';
 
 class FooterCustom extends StatelessWidget {
   @override
@@ -7,7 +8,7 @@ class FooterCustom extends StatelessWidget {
     return Container(
       height: 80,
       width: MediaQuery.of(context).size.width,
-      color: Color(0xff2c3e50),
+      color: colorTwo,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,

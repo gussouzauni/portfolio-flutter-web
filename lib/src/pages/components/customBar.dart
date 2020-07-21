@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:myportfolio/src/utils/utils.dart';
 
 class CustomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(30),
-      decoration: BoxDecoration(color: Color(0xff2c3e50), boxShadow: [
+      decoration: BoxDecoration(color: colorTwo, boxShadow: [
         BoxShadow(
           offset: Offset(0, -2),
           blurRadius: 30,
@@ -46,7 +47,7 @@ class CustomBar extends StatelessWidget {
                       child: InkWell(
                         onTap: () {},
                         child: Text(
-                          'Contato',
+                          '#',
                           style: TextStyle(
                               fontSize: 28,
                               color: Colors.white,

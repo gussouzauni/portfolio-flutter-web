@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:myportfolio/src/pages/contact/controller.dart';
+import 'package:myportfolio/src/utils/utils.dart';
 
 class FormCustom extends StatefulWidget {
+  final double fontSizeField;
+  final double valueWidth;
+  final double valueHeight;
+
+  const FormCustom(
+      {Key key, this.fontSizeField, this.valueWidth, this.valueHeight})
+      : super(key: key);
   @override
   _FormCustomState createState() => _FormCustomState();
 }
@@ -18,21 +26,13 @@ class _FormCustomState extends State<FormCustom> {
       padding: const EdgeInsets.only(top: 100),
       child: Container(
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(30), color: Color(0xff2c3e50)),
-        width: width / 2.0,
-        height: height / 1.5,
+            borderRadius: BorderRadius.circular(30), color: colorTwo),
+        width: width / widget.valueWidth,
+        height: height / widget.valueHeight,
         child: Padding(
-          padding: const EdgeInsets.all(50.0),
+          padding: const EdgeInsets.all(20.0),
           child: Column(
             children: <Widget>[
-              Center(
-                  child: Text(
-                'Entre em contato comigo!',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold),
-              )),
               SizedBox(
                 height: 10,
               ),
@@ -47,7 +47,7 @@ class _FormCustomState extends State<FormCustom> {
                         color: Colors.white, fontWeight: FontWeight.bold),
                     prefixIcon: Icon(
                       Icons.person,
-                      size: 30,
+                      size: 24,
                       color: Colors.white,
                     )),
               ),
@@ -64,7 +64,7 @@ class _FormCustomState extends State<FormCustom> {
                         color: Colors.white, fontWeight: FontWeight.bold),
                     prefixIcon: Icon(
                       Icons.email,
-                      size: 30,
+                      size: 24,
                       color: Colors.white,
                     )),
               ),
@@ -81,7 +81,7 @@ class _FormCustomState extends State<FormCustom> {
                         color: Colors.white, fontWeight: FontWeight.bold),
                     prefixIcon: Icon(
                       Icons.phone,
-                      size: 30,
+                      size: 24,
                       color: Colors.white,
                     )),
               ),
@@ -99,7 +99,7 @@ class _FormCustomState extends State<FormCustom> {
                         color: Colors.white, fontWeight: FontWeight.bold),
                     prefixIcon: Icon(
                       Icons.description,
-                      size: 30,
+                      size: 24,
                       color: Colors.white,
                     )),
               ),
@@ -116,7 +116,7 @@ class _FormCustomState extends State<FormCustom> {
                         color: Colors.white, fontWeight: FontWeight.bold),
                     prefixIcon: Icon(
                       Icons.attach_money,
-                      size: 30,
+                      size: 24,
                       color: Colors.white,
                     )),
               ),

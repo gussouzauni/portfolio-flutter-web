@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:myportfolio/src/pages/components/customBar.dart';
 import 'package:myportfolio/src/pages/components/footer.dart';
+import 'package:myportfolio/src/utils/appColors.dart';
 
 import 'portfolio.dart';
 import 'resume.dart';
@@ -30,7 +31,6 @@ class _HomePageState extends State<HomePage> {
             CustomBar(),
             Expanded(
               child: SingleChildScrollView(
-                scrollDirection: Axis.vertical,
                 child: Column(
                   children: [
                     Resume(),
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                     Padding(
                       padding: EdgeInsets.all(20),
                       child: Container(
-                        color: Color(0xff43bd9d),
+                        color: colorOne,
                         height: 500,
                         width: MediaQuery.of(context).size.width,
                       ),
