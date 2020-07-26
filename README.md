@@ -2,6 +2,7 @@
 
 ```
   - Flutter web
+  - Projetos desenvolvidos na área da tecnologia
 ```
 
 ## Layout
